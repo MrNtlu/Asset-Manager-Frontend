@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import React, { useRef } from "react";
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Descriptions from './components/Experience';
+import Download from './components/Download';
+import Footer from './components/Footer';
+import Pricing from './components/Pricing';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App text-white overflow-hidden" style={{ backgroundImage: `url(${require("../src/img/bg.jpeg")})`}}>
+      <Header/>
+      <Hero/>
+      <Descriptions/>
+      <Pricing/>
+      <Download/>
+      <Footer/>
     </div>
   );
 }
