@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React, { RefObject, useState } from 'react'
+import React, { useState } from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
 import { Colors } from '../utils/Colors'
 import DownloadAds from './DownloadAds'
@@ -9,34 +9,34 @@ function Hero() {
     const [elementIsVisible, setElementIsVisible] = useState(false) 
     const leftImage = {
         true: {
-            left: "19rem",
+            marginLeft: "10rem",
         },
         false: {
-            left: "13rem",
+            marginLeft: "0rem",
         },
     };
     const rightImage = {
         true: {
-            left: "7rem",
+            marginRight: "10rem",
         },
         false: {
-            left: "13rem",
+            marginRight: "0rem",
         },
     }
     return (
-        <VisibilitySensor onChange={(isVisible: boolean) => setElementIsVisible(isVisible)} minTopValue={300}>
-            <div className="wrapper flex items-center justify-between px-[5rem] rounded-b-[5rem] w-[100%] h-[35rem] relative z-[3]">
-                <div className="headings flex flex-col items-start justify-center h-[100%] text-[3rem]">
+        <VisibilitySensor onChange={(isVisible: boolean) => setElementIsVisible(isVisible)} offset={{bottom: 300}} partialVisibility={true}>
+            <div className="wrapper flex flex-col items-center relative z-[3]" style={{ backgroundColor: colors.bgSecondary }}>
+                <div className="headings flex flex-col items-center justify-center text-[3rem]">
                     <span>Kanma</span>{" "}
                     <span><b>Investment & Subscription</b></span>
                     <span className="text-[20px] text-gray-400">
                         Track and manager your investments and subscriptions.
                     </span>
-                    <div className='mt-[2rem]'>
+                    <div className='mt-[2rem] mb-[1rem]'>
                         <DownloadAds/>
                     </div>
                 </div>
-                <div className="images relative w-[50%]">
+                <div className="flex flex-col items-center images relative w-[50%] mb-[22rem]">
                     <motion.img 
                         variants={leftImage}
                         animate={`${elementIsVisible}`}
@@ -46,7 +46,7 @@ function Hero() {
                         }}
                         src={require("../img/img_2.png")} 
                         alt="" 
-                        className='absolute top-[-15rem] left-[19rem] h-[30rem]'
+                        className='absolute h-[30rem] ml-[10rem]'
                     />
                     <motion.img 
                         variants={rightImage}
@@ -57,9 +57,9 @@ function Hero() {
                         }}
                         src={require("../img/img_3.png")} 
                         alt="" 
-                        className='absolute top-[-15rem] left-[7rem] h-[30rem]'
+                        className='absolute h-[30rem] mr-[10rem]'
                     />
-                    <img src={require("../img/img_1.png")} alt="" className='absolute top-[-15rem] left-[13rem] h-[30rem]'/>
+                    <img className='absolute h-[30rem]' src={require("../img/img_1.png")} alt=""/>
                 </div>
             </div>
         </VisibilitySensor>

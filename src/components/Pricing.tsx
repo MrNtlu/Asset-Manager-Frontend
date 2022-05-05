@@ -1,43 +1,45 @@
-import React, { RefObject } from 'react'
+import React from 'react'
 import { Colors } from '../utils/Colors'
 import PriceCard from './PriceCard'
 
 function Pricing() {
     const colors = new Colors()
     return(
-        <div className='flex flex-col items-center bg-black p-4'>
-            <div className="mb-2 mt-12 text-center">
-                <h1 className="mb-4 text-[6rem] text-white">Pricing</h1>
-                <p className="text-lg text-white">Choose the right pricing for you</p>
-            </div>
-            <div className="flex flex-col gap-8 p-10 xl:flex-row">
-                <PriceCard 
-                    color={colors.primaryColor} 
+        <div className='flex flex-col items-center' style={{ backgroundColor: colors.bgSecondary }}>
+            <h2 className="pl-10 pt-10 text-[5rem] text-white">Pricing</h2>
+            <div className="flex justify-center gap-6 p-10 xl:flex-row">
+                <PriceCard
+                    color={colors.bgPrimary}
+                    textColor="#FFFFFF" 
+
                     name="Basic" 
                     description="Free tier with limitations" 
                     features={["10 Investments", "5 Subscriptions", "3 Credit Cards", "Weekly Stats"]}
                 />
                 <PriceCard 
-                    color="#78E3FC" 
+                    color="#FFFFFF"
+                    textColor="#000000"
                     name="Monthly" 
-                    description="Free tier with limitations" 
-                    features={["10 Investments", "5 Subscriptions", "3 Credit Cards", "Weekly Stats"]}
+                    description="Premiem Membership,&nbsp;monthly." 
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Credit Cards", "Stats for longer periods", "More soon..."]}
                     priceUSD="0.99"
                     priceEUR='0.89'
                 />
                 <PriceCard 
-                    color="#78E3FC" 
+                    color="#FFFFFF"
+                    textColor="#000000"
                     name="Annual" 
-                    description="Free tier with limitations" 
-                    features={["10 Investments", "5 Subscriptions", "3 Credit Cards", "Weekly Stats"]}
+                    description="Premiem Membership,&nbsp;annual." 
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Credit Cards", "Stats for longer periods", "Better monthly price", "More soon..."]}
                     priceUSD="3.99"
                     priceEUR='4.49'
                 />
                 <PriceCard 
-                    color="#78E3FC" 
+                    color={colors.bgAccent}
+                    textColor="#FFFFFF"
                     name="Lifetime" 
-                    description="Free tier with limitations" 
-                    features={["10 Investments", "5 Subscriptions", "3 Credit Cards", "Weekly Stats"]}
+                    description="Premiem Membership,&nbsp;lifetime." 
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Credit Cards", "Stats for longer periods", "Lifetime access", "Best price", "More soon..."]}
                     priceUSD="6.99"
                     priceEUR='6.59'
                 />

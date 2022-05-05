@@ -1,20 +1,18 @@
 import './App.css';
-import React, { useRef } from "react";
+import React from "react";
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Descriptions from './components/Experience';
-import Download from './components/Download';
+import Descriptions from './components/Descriptions';
 import Footer from './components/Footer';
 import Pricing from './components/Pricing';
 
 function App() {
   return (
-    <div className="App text-white overflow-hidden" style={{ backgroundImage: `url(${require("../src/img/bg.jpeg")})`}}>
+    <div className="App text-white overflow-hidden w-[100%]">
       <Header/>
       <Hero/>
       <Descriptions/>
       <Pricing/>
-      <Download/>
       <Footer/>
     </div>
   );
