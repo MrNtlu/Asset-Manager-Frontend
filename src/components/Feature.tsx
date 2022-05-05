@@ -14,7 +14,7 @@ function Feature({icon, title, description}:{icon: String, title: String, descri
         },
     };
     return(
-        <VisibilitySensor onChange={(isVisible: boolean) => setElementIsVisible(isVisible)}>
+        <VisibilitySensor onChange={(isVisible: boolean) => setElementIsVisible(isVisible)} partialVisibility={true} offset={{bottom: 5}}>
             <div className="feature flex items-center justify-center flex-col relative text-center mx-12 w-[20rem] mb-[1rem]">
                 <motion.div 
                     variants={variant}

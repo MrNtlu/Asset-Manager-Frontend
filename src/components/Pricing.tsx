@@ -6,12 +6,11 @@ function Pricing() {
     const colors = new Colors()
     return(
         <div className='flex flex-col items-center' style={{ backgroundColor: colors.bgSecondary }}>
-            <h2 className="pl-10 pt-10 text-[5rem] text-white">Pricing</h2>
-            <div className="flex justify-center gap-6 p-10 xl:flex-row">
+            <h2 className="pt-10 text-[5rem] text-white">Pricing</h2>
+            <div className="gap-6 p-10 grid 2xl:grid-cols-4 xl:grid-cols-2 md:grid-cols-2">
                 <PriceCard
                     color={colors.bgPrimary}
                     textColor="#FFFFFF" 
-
                     name="Basic" 
                     description="Free tier with limitations" 
                     features={["10 Investments", "5 Subscriptions", "3 Credit Cards", "Weekly Stats"]}

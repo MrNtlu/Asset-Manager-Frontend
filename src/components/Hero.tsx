@@ -26,7 +26,7 @@ function Hero() {
     return (
         <VisibilitySensor onChange={(isVisible: boolean) => setElementIsVisible(isVisible)} offset={{bottom: 300}} partialVisibility={true}>
             <div className="wrapper flex flex-col items-center relative z-[3]" style={{ backgroundColor: colors.bgSecondary }}>
-                <div className="headings flex flex-col items-center justify-center text-[3rem]">
+                <div className="headings flex flex-col items-center justify-center text-[3rem] text-center">
                     <span>Kanma</span>{" "}
                     <span><b>Investment & Subscription</b></span>
                     <span className="text-[20px] text-gray-400">
@@ -36,7 +36,7 @@ function Hero() {
                         <DownloadAds/>
                     </div>
                 </div>
-                <div className="flex flex-col items-center images relative w-[50%] mb-[22rem]">
+                <div className="flex flex-col items-center images relative w-[100%] mb-[22rem]">
                     <motion.img 
                         variants={leftImage}
                         animate={`${elementIsVisible}`}
