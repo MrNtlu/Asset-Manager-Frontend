@@ -18,7 +18,7 @@ export class Colors {
         this.bgPrimary = "#051B74"
         this.bgSecondary = "#2E0BA0"
         this.bgAccent = "#F500BD"
-        this.sectionBG = "#000000A6"//this.bgSecondary+"A6"
+        this.sectionBG = "#000000A6"
     }
 }
 
