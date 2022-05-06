@@ -3,7 +3,7 @@ import Feature from './Feature';
 
 function Descriptions() {
     return(
-        <div className="flex flex-col items-center justify-start px-[5rem] p-[5rem] relative z-[2] pt-[6rem] bg-[#FFFFFF]">
+        <div className="flex flex-col items-center justify-start px-[5rem] p-[5rem] relative z-[2] pt-[7rem] bg-[#FFFFFF]">
             <h2 className="pt-10 text-[5rem] text-black">Features</h2>
             <div className="headline flex flex-col text-center items-center text-[1.4rem] mt-[0.5rem] text-black">
                 <span>Kanma will help you track your investments and subscriptions</span>

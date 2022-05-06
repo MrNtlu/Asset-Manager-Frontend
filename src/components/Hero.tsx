@@ -28,9 +28,9 @@ function Hero() {
             <div className="wrapper flex flex-col items-center relative z-[3]" style={{ backgroundColor: colors.bgSecondary }}>
                 <div className="headings flex flex-col items-center justify-center text-[3rem] text-center">
                     <span>Kanma</span>{" "}
-                    <span><b>Investment & Subscription</b></span>
+                    <span><b>Personal Finance</b></span>
                     <span className="text-[20px] text-gray-400">
-                        Track and manager your investments and subscriptions.
+                        Track and manage your investments and subscriptions.
                     </span>
                     <div className='mt-[2rem] mb-[1rem]'>
                         <DownloadAds/>
@@ -46,7 +46,7 @@ function Hero() {
                         }}
                         src={require("../img/img_2.png")} 
                         alt="" 
-                        className='absolute h-[30rem] ml-[10rem]'
+                        className='absolute h-[31rem] ml-[10rem]'
                     />
                     <motion.img 
                         variants={rightImage}
@@ -57,9 +57,9 @@ function Hero() {
                         }}
                         src={require("../img/img_3.png")} 
                         alt="" 
-                        className='absolute h-[30rem] mr-[10rem]'
+                        className='absolute h-[31rem] mr-[10rem]'
                     />
-                    <img className='absolute h-[30rem]' src={require("../img/img_1.png")} alt=""/>
+                    <img className='absolute h-[31rem]' src={require("../img/img_1.png")} alt=""/>
                 </div>
             </div>
         </VisibilitySensor>

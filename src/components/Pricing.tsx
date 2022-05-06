@@ -7,7 +7,7 @@ function Pricing() {
     return(
         <div className='flex flex-col items-center' style={{ backgroundColor: colors.bgSecondary }}>
             <h2 className="pt-10 text-[5rem] text-white">Pricing</h2>
-            <div className="gap-6 p-10 grid 2xl:grid-cols-4 xl:grid-cols-2 md:grid-cols-2">
+            <div className="gap-6 p-10 grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2">
                 <PriceCard
                     color={colors.bgPrimary}
                     textColor="#FFFFFF" 

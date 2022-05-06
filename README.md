@@ -3,10 +3,11 @@
 ### Frontend of Asset Manager (React + Typescript + Tailwind)
 
 <ul>
-    <li> Framer Motion
     <li> React
+    <li> React Router
     <li> React Visibility Sensor
     <li> Typescript
+    <li> Framer Motion
 </ul>
 
 Flutter (Android/Mac/Windows/iOS): [Asset Manager Flutter](https://github.com/MrNtlu/Asset-Manager-Flutter)

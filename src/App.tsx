@@ -13,7 +13,7 @@ function App() {
       <Hero/>
       <Descriptions/>
       <Pricing/>
-      <Footer/>
+      <Footer isHomeVisible={false}/>
     </div>
   );
 }
