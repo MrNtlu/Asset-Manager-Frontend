@@ -30,7 +30,7 @@ function Hero() {
                     <span>Kanma</span>{" "}
                     <span><b>Personal Finance</b></span>
                     <span className="text-[20px] text-gray-400">
-                        Track and manage your investments and subscriptions.
+                        Track and manage your money.
                     </span>
                     <div className='mt-[2rem] mb-[1rem]'>
                         <DownloadAds/>

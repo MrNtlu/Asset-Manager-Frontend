@@ -13,14 +13,14 @@ function Pricing() {
                     textColor="#FFFFFF" 
                     name="Basic" 
                     description="Free tier with limitations" 
-                    features={["10 Investments", "5 Subscriptions", "3 Credit Cards", "Weekly Stats"]}
+                    features={["10 Investments", "5 Subscriptions", "10 Daily Transactions", "3 Credit Cards", "2 Bank Accounts", "Weekly Stats"]}
                 />
                 <PriceCard 
                     color="#FFFFFF"
                     textColor="#000000"
                     name="Monthly" 
-                    description="Premiem Membership,&nbsp;monthly." 
-                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Credit Cards", "Stats for longer periods", "More soon..."]}
+                    description="Premium Membership,&nbsp;monthly." 
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "More soon..."]}
                     priceUSD="0.99"
                     priceEUR='0.89'
                 />
@@ -28,8 +28,8 @@ function Pricing() {
                     color="#FFFFFF"
                     textColor="#000000"
                     name="Annual" 
-                    description="Premiem Membership,&nbsp;annual." 
-                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Credit Cards", "Stats for longer periods", "Better monthly price", "More soon..."]}
+                    description="Premium Membership,&nbsp;annual." 
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Better monthly price", "More soon..."]}
                     priceUSD="3.99"
                     priceEUR='4.49'
                 />
@@ -37,8 +37,8 @@ function Pricing() {
                     color={colors.bgAccent}
                     textColor="#FFFFFF"
                     name="Lifetime" 
-                    description="Premiem Membership,&nbsp;lifetime." 
-                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Credit Cards", "Stats for longer periods", "Lifetime access", "Best price", "More soon..."]}
+                    description="Premium Membership,&nbsp;lifetime." 
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Lifetime access", "Best price", "More soon..."]}
                     priceUSD="6.99"
                     priceEUR='6.59'
                 />
