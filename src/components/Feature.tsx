@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react'
 import VisibilitySensor from 'react-visibility-sensor'
-import { Colors } from '../utils/Colors';
 
 function Feature({icon, title, description}:{icon: String, title: String, description: String}) {
     const [elementIsVisible, setElementIsVisible] = useState(false);
@@ -24,7 +23,7 @@ function Feature({icon, title, description}:{icon: String, title: String, descri
                     }}
                     animate={`${elementIsVisible}`}
                     className="icon bg-[#081730] rounded-2xl p-4"
-                    style={{ backgroundColor: new Colors().bgSecondary }}>
+                    style={{ backgroundColor: "#EEEEEE" }}>
                     <img src={require(`../img/${icon}.png`)} alt="" className='w-[5.2rem]'/>
                 </motion.div>
 

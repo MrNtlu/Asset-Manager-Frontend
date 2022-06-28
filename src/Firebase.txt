@@ -1,3 +1,5 @@
+npm start // Test changed
+
 npm run build
-serve -s build //test
+serve -s build // Test build
 firebase deploy

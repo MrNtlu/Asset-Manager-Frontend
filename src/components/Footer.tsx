@@ -11,6 +11,7 @@ function Footer({isHomeVisible}: {isHomeVisible: boolean}) {
                         ? <a href="/"><li className={liStyle}>Home</li></a>
                         : <></>
                     }
+                    <a href="mailto:mrntlu@gmail.com"><li className={liStyle}>Contact Us</li></a>
                     <a href="/privacy"><li className={liStyle}>Privacy Policy</li></a>
                     <a href="/terms"><li className={liStyle}>Terms & Policy</li></a>
                 </ul>
