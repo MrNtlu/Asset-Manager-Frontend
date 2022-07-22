@@ -20,7 +20,7 @@ function Pricing() {
                     textColor="#000000"
                     name="Monthly" 
                     description="Premium Membership,&nbsp;monthly." 
-                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "More soon..."]}
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Subscription Reminder", "More soon..."]}
                     priceUSD="0.99"
                     priceEUR='0.89'
                 />
@@ -29,7 +29,7 @@ function Pricing() {
                     textColor="#000000"
                     name="Annual" 
                     description="Premium Membership,&nbsp;annual." 
-                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Better monthly price", "More soon..."]}
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Subscription Reminder", "Better monthly price", "More soon..."]}
                     priceUSD="3.99"
                     priceEUR='4.49'
                 />
@@ -38,7 +38,7 @@ function Pricing() {
                     textColor="#FFFFFF"
                     name="Lifetime" 
                     description="Premium Membership,&nbsp;lifetime." 
-                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Lifetime access", "Best price", "More soon..."]}
+                    features={["Unlimited Investments", "Unlimited Subscriptions", "Unlimited Transactions", "Unlimited Credit Cards", "Unlimited Bank Accounts", "Stats for longer periods", "Subscription Reminder", "Lifetime access", "Best price", "More soon..."]}
                     priceUSD="6.99"
                     priceEUR='6.59'
                 />
